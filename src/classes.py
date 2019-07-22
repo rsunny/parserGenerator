@@ -63,7 +63,7 @@ class ReductionNode:
 
         for label in self.sons:
             # Get label value.
-            label_index = bitPack.tokenToInt(label, non_terminals, terminals)
+            label_index = bitPack.token_to_int(label, non_terminals, terminals)
             vector[current_position] = label_index
             vector[current_position + 1] = sons_offsets[label]
             current_position += 2
