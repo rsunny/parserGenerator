@@ -35,7 +35,7 @@ def build_and_check_matrix(non_terminals, terminals, rules):
                 non_operator.append(classes.Conflict(rule, i, i + 1))
 
         # Check trigrams.
-        for i in range(0, len(rhs) - 1):
+        for i in range(0, len(rhs) - 2):
             tok1 = rhs[i]
             tok2 = rhs[i + 1]
             tok3 = rhs[i + 2]
